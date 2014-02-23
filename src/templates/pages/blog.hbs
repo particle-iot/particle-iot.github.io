@@ -1,0 +1,8 @@
+---
+title: Blog
+posts: ['<%= config.content %>/markdown.md']
+---
+<h1>Posts</h1>
+{{#each posts}}
+  {{md this}}
+{{/each}}
