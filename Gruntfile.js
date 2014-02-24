@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 
     config: {
       src: 'src',
-      dist: 'dist',
+      dist: '.',
       content: 'src/content'
     },
 
@@ -80,7 +80,16 @@ module.exports = function(grunt) {
 
     // Before generating any new files,
     // remove any previously-created files.
-    clean: ['<%= config.dist %>/**/*.{html,xml}']
+    clean: ['<%= config.dist %>/*.{html,xml}'],
+
+    shell: {
+      push: {
+        options: {
+          stdout: true
+        },
+        command: 'git push origin master'
+      }
+    }
 
   });
 
@@ -88,6 +97,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('server', [
     'clean',
@@ -104,5 +114,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'build'
   ]);
+
+  grunt.registerTask('publish', ['build', 'shell:push']);
 
 };
