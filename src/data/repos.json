@@ -47,6 +47,16 @@
       "title": "spark-cli",
       "description": "Command Line Interface (CLI) for interacting with the Spark Cloud and the Spark Core.",
       "available": true
+    },
+    {
+      "title": "docs",
+      "description": "Documentation for the Spark Cloud and the Spark Core.",
+      "available": true
+    },
+    {
+      "title": "spark.github.io",
+      "description": "This very site. Totally meta.",
+      "available": true
     }
   ]
 }
