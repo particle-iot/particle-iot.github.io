@@ -1,18 +1,18 @@
 {
-  "name": "sparkgithubio",
+  "name": "spark.github.io",
   "description": "Spark's website at spark.github.io.",
-  "version": "0.1.0",
-  "homepage": "https://github.com/spark/sparkgithubio",
+  "version": "0.1.1",
+  "homepage": "http://spark.github.io",
   "author": {
     "name": "Zach Supalla",
-    "url": "http://github.com/spark/"
+    "url": "http://github.com/cazzo/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/spark/sparkgithubio.git"
+    "url": "git://github.com/spark/spark.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/spark/sparkgithubio/issues"
+    "url": "https://github.com/spark/spark.github.io/issues"
   },
   "engines": {
     "node": ">=0.8"
@@ -28,12 +28,12 @@
     "grunt-contrib-watch": "~0.5.3",
     "load-grunt-tasks": "~0.2.1",
     "time-grunt": "~0.2.7",
-    "grunt-shell": "~0.6.4"
+    "grunt-push-release": "~0.1.1"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/spark/sparkgithubio/blob/master/LICENSE-MIT"
+      "url": "https://github.com/spark/spark.github.io/blob/master/LICENSE-MIT"
     }
   ],
   "keywords": [
