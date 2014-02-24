@@ -54,7 +54,7 @@ We use [Git](http://git-scm.com/) for version control, and [Github](http://www.g
 
 We use [Github Issues](https://github.com/features) to track issues for each of our open source repositories, and [Waffle.io](https://waffle.io/) to share our workflow.
 
-Each of the above repositories has a link for issues and a waffle board; feel free to submit feature requests and raise bugs on Github, and star a repository to follow its progress.
+Each of the above repositories has a link for issues and a waffle workflow board; feel free to submit feature requests and raise bugs on Github, or star a repository to follow its progress.
 
 ### Contributions
 
