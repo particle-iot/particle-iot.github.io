@@ -48,7 +48,7 @@ Official language wrappers are currently in development for Node.js, Ruby, and P
 
 ### Version control
 
-We use [Git](http://git-scm.com/) for version control, and [Github](http://www.github.com) as our central repository for all of our source code. Anyone can view our open source repositories, and with a free Github account, raise issuea and contribute to our source code.
+We use [Git](http://git-scm.com/) for version control, and [Github](http://www.github.com) as our central repository for all of our source code. Anyone can view our open source repositories, and with a free Github account, raise issues and contribute to our source code.
 
 ### Feature requests and bug fixes
 
