@@ -1,0 +1,34 @@
+{
+  "hardware": [
+    {
+      "title": "core",
+      "description": "Hardware design files for the Spark Core, our Wi-Fi development toolkit and reference design."
+    }
+  ],
+  "firmware": [
+    {
+      "title": "core-firmware",
+      "description": "Firmware for the Spark Core."
+    },
+    {
+      "title": "core-common-lib",
+      "description": "Common libraries and drivers for the Spark Core (STM32+CC3000)."
+    },
+    {
+      "title": "core-communication-lib",
+      "description": "Embedded C++ library for communicating with the Spark Cloud."
+    }
+  ],
+  "mobile": [
+    {
+      "title": "android-app",
+      "description": "The Spark Core Android app, which acts as a template for Android apps for other Spark-powered products."
+    }
+  ],
+  "dev": [
+    {
+      "title": "spark-cli",
+      "description": "Command Line Interface (CLI) for interacting with the Spark Cloud and the Spark Core."
+    }
+  ]
+}
