@@ -28,7 +28,6 @@
     "grunt-contrib-watch": "~0.5.3",
     "load-grunt-tasks": "~0.2.1",
     "time-grunt": "~0.2.7",
-    "grunt-gh-pages": "~0.9.1",
     "grunt-shell": "~0.6.4"
   },
   "licenses": [
