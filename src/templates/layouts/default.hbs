@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{site.title}} | {{title}}</title>
+    <link rel="icon" type="image/png" href="{{assets}}/favicon.ico" />
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="{{assets}}/css/bootstrap.min.css">
@@ -12,7 +13,7 @@
     <link href="{{assets}}/css/bootstrap-theme.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{assets}}/css/theme.css" rel="stylesheet">
+    <link href="{{assets}}/css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,9 +24,9 @@
   </head>
   <body>
 
-    {{> navbar-fixed-top }}
+    {{> navbar }}
 
-    <div class="container theme-showcase" role="main">
+    <div class="container" role="main">
 
       {{> body }}
 
@@ -35,5 +36,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{assets}}/js/bootstrap.min.js"></script>
+    <script src="//use.typekit.net/mov0hpt.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </body>
 </html>

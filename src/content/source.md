@@ -1,42 +1,40 @@
-## Spark Source
+<img class="spark-stack" src="https://s3.amazonaws.com/spark-website/spark-stack.png">
+
+# Spark Source
 
 Spark is a complete, open source, full-stack solution for cloud-connected devices.
 
-The content below includes everything necessary to build a powerful connected device from scratch, including hardware designs, firmware, cloud software, mobile app templates, and development tools.
+---
 
-### Repositories
+The content below includes everything necessary to build a powerful connected device from scratch, including hardware designs, firmware, cloud software, mobile app templates, and development tools.
 
 #### Hardware
 
-<div class="row">
 {{#each repos.hardware}}
   {{> repo}}
 {{/each}}
-</div>
 
 #### Firmware
 
-<div class="row">
 {{#each repos.firmware}}
   {{> repo}}
 {{/each}}
-</div>
 
 #### Transport layer
 
-The transport layer between Spark devices and the Spark Cloud is composed of [CoAP](https://tools.ietf.org/html/draft-ietf-core-coap-18) packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel.
+The transport layer between Spark devices and the Spark Cloud is composed of [CoAP](https://tools.ietf.org/html/draft-ietf-core-coap-18) packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the [core-communication-lib](https://www.github.com/spark/core-communication-lib) above.
 
 #### Cloud software
 
-The Spark Cloud open source repository is currently in development, and will be released in March/April 2014.
+{{#each repos.cloud}}
+  {{> repo}}
+{{/each}}
 
 #### Mobile app templates
 
-<div class="row">
 {{#each repos.mobile}}
   {{> repo}}
 {{/each}}
-</div>
 
 #### Language wrappers
 
@@ -44,11 +42,9 @@ Official language wrappers are currently in development for Node.js, Ruby, and P
 
 #### Development tools
 
-<div class="row">
 {{#each repos.dev}}
   {{> repo}}
 {{/each}}
-</div>
 
 ### Version control
 

@@ -1,0 +1,173 @@
+/* Spark variables */
+
+$fonts: proxima-nova, "Helvetica Neue", helvetica, arial, sans-serif;
+$monospace-fonts: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;
+$spark-blue: #00adef;
+$spark-blue-dark: #009dcf;
+$white: #ffffff;
+$translucent-white: rgba(255, 255, 255, .6);
+$faded-white: rgba(255, 255, 255, .8);
+$almost-white: #f7f7f7;
+$midnight-blue: #2c3e50;
+$wet-asphalt: #34495e;
+$almost-black: #0c0c0c;
+$faded-black: rgba(0, 0, 0, .8);
+$dark-gray: #333333;
+$gray: #777777;
+$light-gray: #c7c7c7;
+$clouds: #ecf0f1;
+
+$greensea: #16a085;
+$emerald: #2ecc71;
+$nephritis: #27ae60;
+$carrot: #e67e22;
+$pumpkin: #d35400;
+$amethyst: #9b59b6;
+$wisteria: #8e44ad;
+$sunflower: #f1c40f;
+$orange: #f39c12;
+$alizarin: #e74c3c;
+$asbestos: #7f8c8d;
+
+/* Mix-ins */
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+       -o-transition: $args;
+          transition: $args;
+}
+
+
+body {
+  font-family: $fonts;
+  margin-bottom: 100px;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, ul, li, button, input {
+  font-family: $fonts;
+}
+
+a:hover, a:active {
+  text-decoration: none;
+}
+
+.nav {
+  margin: 20px 0 0;
+  width: 100%;
+}
+
+img.logo {
+  width: 190px;
+  height: 60px;
+  float: left;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 48px;
+  padding-top: 96px;
+}
+
+h1 + p, hr + p {
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+hr + p {
+  margin-bottom: 60px;
+}
+
+img.spark-stack {
+  height: 360px;
+  width: 360px;
+  float: right;
+}
+
+hr {
+  clear: both;
+  border: 0;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 0;
+  clear: both;
+}
+
+h3 + p {
+  margin-top: 12px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 18px;
+  margin-bottom: 36px;
+}
+
+h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+  clear: both;
+}
+
+h4 + .repo {
+  clear: both;
+}
+
+.repo {
+  float: left;
+  height: 240px;
+  width: 230px;
+  border: 5px solid #eee;
+  padding: 10px;
+  margin-bottom: 36px;
+  margin-right: 10px;
+
+  h5 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 3px;
+    display: block;
+    width: 120px;
+    height: 44px;
+  }
+
+  iframe {
+    float: right;
+  }
+
+  span {
+    display: block;
+    height: 80px;
+    font-size: 12px;
+  }
+}
+
+ul {
+  padding-left: 18px;
+  margin-top: -30px;
+
+  li {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+ul + h3 {
+  margin-top: 36px;
+}
+

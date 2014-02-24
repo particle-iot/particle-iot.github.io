@@ -1,6 +1,17 @@
-<div class="repo col-sm-4">
+<div class="repo">
+  {{#if available}}
+  <iframe src="http://ghbtns.com/github-btn.html?user=spark&repo={{title}}&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="52" height="20"></iframe>
+  <a href="https://www.github.com/spark/{{title}}/">
+    <h5>{{title}}</h5>
+  </a>
+  {{else}}
   <h5>{{title}}</h5>
+  {{/if}}
+
   <span>{{description}}</span>
+  {{#if available}}
   <a class="btn btn-default btn-block" href="https://www.github.com/spark/{{title}}/issues">Issues</a>
-  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/{{title}}">Work board</a>
+  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/{{title}}">Workflow</a>
+  {{/if}}
 </div>

@@ -2,33 +2,51 @@
   "hardware": [
     {
       "title": "core",
-      "description": "Hardware design files for the Spark Core, our Wi-Fi development toolkit and reference design."
+      "description": "Hardware design files for the Spark Core, our Wi-Fi development toolkit and reference design.",
+      "available": true
     }
   ],
   "firmware": [
     {
       "title": "core-firmware",
-      "description": "Firmware for the Spark Core."
+      "description": "Firmware for the Spark Core.",
+      "available": true
     },
     {
       "title": "core-common-lib",
-      "description": "Common libraries and drivers for the Spark Core (STM32+CC3000)."
+      "description": "Common libraries and drivers for the Spark Core (STM32+CC3000).",
+      "available": true
     },
     {
       "title": "core-communication-lib",
-      "description": "Embedded C++ library for communicating with the Spark Cloud."
+      "description": "Embedded C++ library for communicating with the Spark Cloud.",
+      "available": true
+    }
+  ],
+  "cloud": [
+    {
+      "title": "cloud",
+      "description": "The Spark Cloud open source repository is currently in development, and will be released in March/April 2014.",
+      "available": false
     }
   ],
   "mobile": [
     {
       "title": "android-app",
-      "description": "The Spark Core Android app, which acts as a template for Android apps for other Spark-powered products."
+      "description": "The Spark Core Android app, which acts as a template for Android apps for other Spark-powered products.",
+      "available": true
+    },
+    {
+      "title": "ios-app",
+      "description": "The Spark Core iOS app will be open sourced in March/April 2014.",
+      "available": false
     }
   ],
   "dev": [
     {
       "title": "spark-cli",
-      "description": "Command Line Interface (CLI) for interacting with the Spark Cloud and the Spark Core."
+      "description": "Command Line Interface (CLI) for interacting with the Spark Cloud and the Spark Core.",
+      "available": true
     }
   ]
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spark | Source</title>
+    <link rel="icon" type="image/png" href="assets/favicon.ico" />
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -12,7 +13,7 @@
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/theme.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,116 +25,155 @@
   <body>
 
     
-<!-- Fixed navbar -->
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="dist/index.html">Spark</a>
+<div id="header">
+  <div class="content">
+    <div class="container">
+      <div class="nav">
+        <a href="https://www.spark.io">
+          <img class="logo" src="https://s3.amazonaws.com/spark-website/spark.png">
+        </a>
+      </div>
     </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <!-- you can exclude pages using {{#isnt}} helper: {{#isnt data.title 'Blog'}} -->
-        
-        <li class="active">
-          <a href="index.html">Source</a>
-        </li>
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Github <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="https://github.com/assemble/assemble">Assemble</a></li>
-            <li><a href="https://github.com/assemble/generator-assemble">Generator Assemble</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Plugins</li>
-            
-          </ul>
-        </li>
-      </ul>
-    </div><!--/.nav-collapse -->
   </div>
 </div>
 
-
-    <div class="container theme-showcase" role="main">
+    <div class="container" role="main">
 
       
 
-<h2 id="spark-source">Spark Source</h2>
+<p><img class="spark-stack" src="https://s3.amazonaws.com/spark-website/spark-stack.png"></p>
+<h1 id="spark-source">Spark Source</h1>
 <p>Spark is a complete, open source, full-stack solution for cloud-connected devices.</p>
+<hr>
 <p>The content below includes everything necessary to build a powerful connected device from scratch, including hardware designs, firmware, cloud software, mobile app templates, and development tools.</p>
-<h3 id="repositories">Repositories</h3>
 <h4 id="hardware">Hardware</h4>
-<div class="row">
+  <div class="repo">
 
-  <div class="repo col-sm-4">
-  <h5>core</h5>
+  <iframe src="http://ghbtns.com/github-btn.html?user=spark&repo=core&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="52" height="20"></iframe>
+  <a href="https://www.github.com/spark/core/">
+    <h5>core</h5>
+  </a>
+
+
   <span>Hardware design files for the Spark Core, our Wi-Fi development toolkit and reference design.</span>
+
   <a class="btn btn-default btn-block" href="https://www.github.com/spark/core/issues">Issues</a>
-  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/core">Work board</a>
+  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/core">Workflow</a>
+
 </div>
 
-<p></div></p>
+
 <h4 id="firmware">Firmware</h4>
-<div class="row">
+  <div class="repo">
 
-  <div class="repo col-sm-4">
-  <h5>core-firmware</h5>
+  <iframe src="http://ghbtns.com/github-btn.html?user=spark&repo=core-firmware&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="52" height="20"></iframe>
+  <a href="https://www.github.com/spark/core-firmware/">
+    <h5>core-firmware</h5>
+  </a>
+
+
   <span>Firmware for the Spark Core.</span>
+
   <a class="btn btn-default btn-block" href="https://www.github.com/spark/core-firmware/issues">Issues</a>
-  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/core-firmware">Work board</a>
+  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/core-firmware">Workflow</a>
+
 </div>
 
-  <div class="repo col-sm-4">
-  <h5>core-common-lib</h5>
+  <div class="repo">
+
+  <iframe src="http://ghbtns.com/github-btn.html?user=spark&repo=core-common-lib&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="52" height="20"></iframe>
+  <a href="https://www.github.com/spark/core-common-lib/">
+    <h5>core-common-lib</h5>
+  </a>
+
+
   <span>Common libraries and drivers for the Spark Core (STM32+CC3000).</span>
+
   <a class="btn btn-default btn-block" href="https://www.github.com/spark/core-common-lib/issues">Issues</a>
-  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/core-common-lib">Work board</a>
+  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/core-common-lib">Workflow</a>
+
 </div>
 
-  <div class="repo col-sm-4">
-  <h5>core-communication-lib</h5>
+  <div class="repo">
+
+  <iframe src="http://ghbtns.com/github-btn.html?user=spark&repo=core-communication-lib&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="52" height="20"></iframe>
+  <a href="https://www.github.com/spark/core-communication-lib/">
+    <h5>core-communication-lib</h5>
+  </a>
+
+
   <span>Embedded C++ library for communicating with the Spark Cloud.</span>
+
   <a class="btn btn-default btn-block" href="https://www.github.com/spark/core-communication-lib/issues">Issues</a>
-  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/core-communication-lib">Work board</a>
+  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/core-communication-lib">Workflow</a>
+
 </div>
 
-<p></div></p>
+
 <h4 id="transport-layer">Transport layer</h4>
-<p>The transport layer between Spark devices and the Spark Cloud is composed of <a href="https://tools.ietf.org/html/draft-ietf-core-coap-18">CoAP</a> packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel.</p>
+<p>The transport layer between Spark devices and the Spark Cloud is composed of <a href="https://tools.ietf.org/html/draft-ietf-core-coap-18">CoAP</a> packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the <a href="https://www.github.com/spark/core-communication-lib">core-communication-lib</a> above.</p>
 <h4 id="cloud-software">Cloud software</h4>
-<p>The Spark Cloud open source repository is currently in development, and will be released in March/April 2014.</p>
-<h4 id="mobile-app-templates">Mobile app templates</h4>
-<div class="row">
+  <div class="repo">
 
-  <div class="repo col-sm-4">
-  <h5>android-app</h5>
-  <span>The Spark Core Android app, which acts as a template for Android apps for other Spark-powered products.</span>
-  <a class="btn btn-default btn-block" href="https://www.github.com/spark/android-app/issues">Issues</a>
-  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/android-app">Work board</a>
+  <h5>cloud</h5>
+
+
+  <span>The Spark Cloud open source repository is currently in development, and will be released in March/April 2014.</span>
+
 </div>
 
-<p></div></p>
+
+<h4 id="mobile-app-templates">Mobile app templates</h4>
+  <div class="repo">
+
+  <iframe src="http://ghbtns.com/github-btn.html?user=spark&repo=android-app&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="52" height="20"></iframe>
+  <a href="https://www.github.com/spark/android-app/">
+    <h5>android-app</h5>
+  </a>
+
+
+  <span>The Spark Core Android app, which acts as a template for Android apps for other Spark-powered products.</span>
+
+  <a class="btn btn-default btn-block" href="https://www.github.com/spark/android-app/issues">Issues</a>
+  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/android-app">Workflow</a>
+
+</div>
+
+  <div class="repo">
+
+  <h5>ios-app</h5>
+
+
+  <span>The Spark Core iOS app will be open sourced in March/April 2014.</span>
+
+</div>
+
+
 <h4 id="language-wrappers">Language wrappers</h4>
 <p>Official language wrappers are currently in development for Node.js, Ruby, and Python. In the meantime, please visit our <a href="https://www.spark.io/resources">resources page</a> for community-developed language wrappers.</p>
 <h4 id="development-tools">Development tools</h4>
-<div class="row">
+  <div class="repo">
 
-  <div class="repo col-sm-4">
-  <h5>spark-cli</h5>
+  <iframe src="http://ghbtns.com/github-btn.html?user=spark&repo=spark-cli&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="52" height="20"></iframe>
+  <a href="https://www.github.com/spark/spark-cli/">
+    <h5>spark-cli</h5>
+  </a>
+
+
   <span>Command Line Interface (CLI) for interacting with the Spark Cloud and the Spark Core.</span>
+
   <a class="btn btn-default btn-block" href="https://www.github.com/spark/spark-cli/issues">Issues</a>
-  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/spark-cli">Work board</a>
+  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/spark-cli">Workflow</a>
+
 </div>
 
-<p></div></p>
+
 <h3 id="version-control">Version control</h3>
 <p>We use <a href="http://git-scm.com/">Git</a> for version control, and <a href="http://www.github.com">Github</a> as our central repository for all of our source code. Anyone can view our open source repositories, and with a free Github account, raise issuea and contribute to our source code.</p>
 <h3 id="feature-requests-and-bug-fixes">Feature requests and bug fixes</h3>
@@ -158,5 +198,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="//use.typekit.net/mov0hpt.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </body>
 </html>
