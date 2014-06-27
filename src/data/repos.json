@@ -26,7 +26,7 @@
   "cloud": [
     {
       "title": "cloud",
-      "description": "The Spark Cloud open source repository is currently in development, and will be released in March/April 2014.",
+      "description": "The Spark Cloud open source repository is currently in development, and will be released in Summer 2014.",
       "available": false
     }
   ],
@@ -38,8 +38,8 @@
     },
     {
       "title": "ios-app",
-      "description": "The Spark Core iOS app will be open sourced in March/April 2014.",
-      "available": false
+      "description": "The Spark Core iOS app, which acts as a template for iOS apps for other Spark-powered products.",
+      "available": true
     }
   ],
   "dev": [
