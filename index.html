@@ -115,14 +115,37 @@
 
 
 <h4 id="transport-layer">Transport layer</h4>
-<p>The transport layer between Spark devices and the Spark Cloud is composed of <a href="https://tools.ietf.org/html/draft-ietf-core-coap-18">CoAP</a> packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the <a href="https://www.github.com/spark/core-communication-lib">core-communication-lib</a> above.</p>
+<p>The transport layer between Spark devices and the Spark Cloud is composed of <a href="https://tools.ietf.org/html/draft-ietf-core-coap-18">CoAP</a> packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the <a href="https://www.github.com/spark/core-communication-lib">core-communication-lib</a> above and the <a href="https://www.github.com/spark/spark-protocol">spark-protocol</a> library below.</p>
 <h4 id="cloud-software">Cloud software</h4>
   <div class="repo">
 
-  <h5>cloud</h5>
+  <iframe src="http://ghbtns.com/github-btn.html?user=spark&repo=spark-server&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="52" height="20"></iframe>
+  <a href="https://www.github.com/spark/spark-server/">
+    <h5>spark-server</h5>
+  </a>
 
 
-  <span>The Spark Cloud open source repository is currently in development, and will be released in Summer 2014.</span>
+  <span>An API compatible open source server for interacting with devices speaking the Spark protocol.</span>
+
+  <a class="btn btn-default btn-block" href="https://www.github.com/spark/spark-server/issues">Issues</a>
+  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/spark-server">Workflow</a>
+
+</div>
+
+  <div class="repo">
+
+  <iframe src="http://ghbtns.com/github-btn.html?user=spark&repo=spark-protocol&type=watch"
+  allowtransparency="true" frameborder="0" scrolling="0" width="52" height="20"></iframe>
+  <a href="https://www.github.com/spark/spark-protocol/">
+    <h5>spark-protocol</h5>
+  </a>
+
+
+  <span>A Node.js module for hosting direct encrypted CoAP socket connetions with Sparky things.</span>
+
+  <a class="btn btn-default btn-block" href="https://www.github.com/spark/spark-protocol/issues">Issues</a>
+  <a class="btn btn-default btn-block" href="http://www.waffle.io/spark/spark-protocol">Workflow</a>
 
 </div>
 

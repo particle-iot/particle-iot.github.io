@@ -22,7 +22,7 @@ The content below includes everything necessary to build a powerful connected de
 
 #### Transport layer
 
-The transport layer between Spark devices and the Spark Cloud is composed of [CoAP](https://tools.ietf.org/html/draft-ietf-core-coap-18) packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the [core-communication-lib](https://www.github.com/spark/core-communication-lib) above.
+The transport layer between Spark devices and the Spark Cloud is composed of [CoAP](https://tools.ietf.org/html/draft-ietf-core-coap-18) packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the [core-communication-lib](https://www.github.com/spark/core-communication-lib) above and the [spark-protocol](https://www.github.com/spark/spark-protocol) library below.
 
 #### Cloud software
 

@@ -25,9 +25,14 @@
   ],
   "cloud": [
     {
-      "title": "cloud",
-      "description": "The Spark Cloud open source repository is currently in development, and will be released in Summer 2014.",
-      "available": false
+      "title": "spark-server",
+      "description": "An API compatible open source server for interacting with devices speaking the Spark protocol.",
+      "available": true
+    },
+    {
+      "title": "spark-protocol",
+      "description": "A Node.js module for hosting direct encrypted CoAP socket connetions with Sparky things.",
+      "available": true
     }
   ],
   "mobile": [
