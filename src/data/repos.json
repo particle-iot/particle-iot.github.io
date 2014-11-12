@@ -2,7 +2,12 @@
   "hardware": [
     {
       "title": "core",
-      "description": "Hardware design files for the Spark Core, our Wi-Fi development toolkit and reference design.",
+      "description": "Hardware design files for the Spark Core, our TI CC3000 Wi-Fi development toolkit and reference design.",
+      "available": true
+    },
+    {
+      "title": "photon",
+      "description": "Hardware design files for the Photon, our Broadcom 43362 development toolkit and reference design.",
       "available": true
     }
   ],
@@ -48,6 +53,11 @@
     }
   ],
   "dev": [
+    {
+      "title": "spark-dev",
+      "description": "Professional IDE for Spark, based on Github's Atom project.",
+      "available": true
+    },
     {
       "title": "spark-cli",
       "description": "Command Line Interface (CLI) for interacting with the Spark Cloud and the Spark Core.",
