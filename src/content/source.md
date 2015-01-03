@@ -66,7 +66,7 @@ Whenever possible, please follow these guidelines for contributions:
 
 - Keep each pull request small and focused on a single feature or bug fix.
 - Familiarize yourself with the code base, and follow the formatting principles adhered to in the surrounding code.
-- Wherever possible, provide unit tests for your contributions. We use [Mocha](http://visionmedia.github.io/mocha/) to test Javascript and [UnitTest++](http://unittest-cpp.sourceforge.net/) to test C++.
+- Wherever possible, provide unit tests for your contributions. We use [Mocha](http://mochajs.org/) to test Javascript and [UnitTest++](http://unittest-cpp.sourceforge.net/) to test C++.
 
 ### Other resources
 
