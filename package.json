@@ -1,7 +1,7 @@
 {
   "name": "spark.github.io",
   "description": "Spark's website at spark.github.io.",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "homepage": "http://spark.github.io",
   "author": {
     "name": "Zach Supalla",
