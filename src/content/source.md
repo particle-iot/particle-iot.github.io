@@ -1,8 +1,8 @@
 <img class="spark-stack" src="https://s3.amazonaws.com/spark-website/spark-stack.png">
 
-# Spark Source
+# Particle Source
 
-Spark is a complete, open source, full-stack solution for cloud-connected devices.
+Particle (formally Spark) is a complete, open source, full-stack solution for cloud-connected devices.
 
 ---
 
@@ -22,7 +22,7 @@ The content below includes everything necessary to build a powerful connected de
 
 #### Transport layer
 
-The transport layer between Spark devices and the Spark Cloud is composed of [CoAP](https://tools.ietf.org/html/draft-ietf-core-coap-18) packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the [core-communication-lib](https://www.github.com/spark/core-communication-lib) above and the [spark-protocol](https://www.github.com/spark/spark-protocol) library below.
+The transport layer between Particle devices and the Particle Cloud is composed of [CoAP](https://tools.ietf.org/html/draft-ietf-core-coap-18) packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the [core-communication-lib](https://www.github.com/spark/core-communication-lib) above and the [spark-protocol](https://www.github.com/spark/spark-protocol) library below.
 
 #### Cloud software
 
@@ -60,7 +60,7 @@ Each of the above repositories has a link for issues and a waffle workflow board
 
 We welcome contributions to all of our open source repositories. These contributions come in the form of a [Pull Request](https://help.github.com/articles/using-pull-requests), where you "fork" our repositories and then request that we "pull" your changes back into our repositories. You must have a Github account to make a contribution.
 
-All contributors must first sign the [Spark Individual Contributor License Agreement (CLA)](https://docs.google.com/a/spark.io/forms/d/1_2P-vRKGUFg5bmpcKLHO_qNZWGi5HKYnfrrkd-sbZoA/viewform), which is based on the Google CLA, and provides the Spark team a license to re-distribute your contributions.
+All contributors must first sign the [Particle Individual Contributor License Agreement (CLA)](https://docs.google.com/a/spark.io/forms/d/1_2P-vRKGUFg5bmpcKLHO_qNZWGi5HKYnfrrkd-sbZoA/viewform), which is based on the Google CLA, and provides the Particle team a license to re-distribute your contributions.
 
 Whenever possible, please follow these guidelines for contributions:
 
@@ -70,4 +70,4 @@ Whenever possible, please follow these guidelines for contributions:
 
 ### Other resources
 
-To learn about Spark's other resources, please visit our [resources page](https://www.particle.io/resources), and chat with us in our [community](https://community.particle.io) or through IRC ([#spark on freenode](https://webchat.freenode.net/?channels=%23spark)).
+To learn about Particle's other resources, please visit our [resources page](https://www.particle.io/resources), and chat with us in our [community](https://community.particle.io) or through IRC ([#spark on freenode](https://webchat.freenode.net/?channels=%23spark)).
