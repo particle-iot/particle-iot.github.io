@@ -38,7 +38,7 @@ The transport layer between Spark devices and the Spark Cloud is composed of [Co
 
 #### Language wrappers
 
-Official language wrappers are currently in development for Node.js, Ruby, and Python. In the meantime, please visit our [resources page](https://www.spark.io/resources) for community-developed language wrappers.
+Official language wrappers are currently in development for Node.js, Ruby, and Python. In the meantime, please visit our [resources page](https://www.particle.io/resources) for community-developed language wrappers.
 
 #### Development tools
 
@@ -70,4 +70,4 @@ Whenever possible, please follow these guidelines for contributions:
 
 ### Other resources
 
-To learn about Spark's other resources, please visit our [resources page](https://www.spark.io/resources), and chat with us in our [community](https://community.spark.io) or through IRC ([#spark on freenode](https://webchat.freenode.net/?channels=%23spark)).
+To learn about Spark's other resources, please visit our [resources page](https://www.particle.io/resources), and chat with us in our [community](https://community.particle.io) or through IRC ([#spark on freenode](https://webchat.freenode.net/?channels=%23spark)).
