@@ -9,12 +9,17 @@
       "title": "photon",
       "description": "Hardware design files for the Photon, our Broadcom 43362 development toolkit and reference design.",
       "available": true
+    },
+    {
+      "title": "electron",
+      "description": "Hardware design files for the Electron, our cellular development toolkit and reference design.",
+      "available": true
     }
   ],
   "firmware": [
     {
-      "title": "core-firmware",
-      "description": "Firmware for the Spark Core.",
+      "title": "firmware",
+      "description": "Firmware for the Core, Photon, and Electron.",
       "available": true
     },
     {
@@ -55,17 +60,17 @@
   "dev": [
     {
       "title": "spark-dev",
-      "description": "Professional IDE for Spark, based on Github's Atom project.",
+      "description": "Professional IDE for Particle, based on Github's Atom project.",
       "available": true
     },
     {
-      "title": "spark-cli",
-      "description": "Command Line Interface (CLI) for interacting with the Spark Cloud and the Spark Core.",
+      "title": "particle-cli",
+      "description": "Command Line Interface (CLI) for interacting with the Particle Cloud, Core, Photon, and Electron.",
       "available": true
     },
     {
       "title": "docs",
-      "description": "Documentation for the Spark Cloud and the Spark Core.",
+      "description": "Documentation for the Particle Cloud and Particle devices.",
       "available": true
     },
     {

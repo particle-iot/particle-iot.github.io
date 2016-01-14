@@ -2,7 +2,7 @@
 
 # Particle Source
 
-Particle (formally Spark) is a complete, open source, full-stack solution for cloud-connected devices.
+Particle (formerly Spark) is a complete, open source, full-stack solution for cloud-connected devices.
 
 ---
 
@@ -22,7 +22,7 @@ The content below includes everything necessary to build a powerful connected de
 
 #### Transport layer
 
-The transport layer between Particle devices and the Particle Cloud is composed of [CoAP](https://tools.ietf.org/html/draft-ietf-core-coap-18) packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the [core-communication-lib](https://www.github.com/spark/core-communication-lib) above and the [spark-protocol](https://www.github.com/spark/spark-protocol) library below.
+The transport layer between Particle devices and the Particle Cloud is composed of [CoAP](https://tools.ietf.org/html/draft-ietf-core-coap-18) packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the [core-communication-lib](https://github.com/spark/core-communication-lib) above and the [spark-protocol](https://github.com/spark/spark-protocol) library below.
 
 #### Cloud software
 
@@ -52,9 +52,9 @@ We use [Git](http://git-scm.com/) for version control, and [Github](http://www.g
 
 ### Feature requests and bug fixes
 
-We use [Github Issues](https://github.com/features) to track issues for each of our open source repositories, and [Waffle.io](https://waffle.io/) to share our workflow.
+We use [Github Issues](https://github.com/features) to track issues for each of our open source repositories.
 
-Each of the above repositories has a link for issues and a waffle workflow board; feel free to submit feature requests and raise bugs on Github, or star a repository to follow its progress.
+Each of the above repositories has a link for issues; feel free to submit feature requests and raise bugs on Github, or star a repository to follow its progress.
 
 ### Contributions
 
@@ -70,4 +70,4 @@ Whenever possible, please follow these guidelines for contributions:
 
 ### Other resources
 
-To learn about Particle's other resources, please visit our [resources page](https://www.particle.io/resources), and chat with us in our [community](https://community.particle.io) or through IRC ([#spark on freenode](https://webchat.freenode.net/?channels=%23spark)).
+To learn about Particle's other resources, please visit our [resources page](https://www.particle.io/resources), and chat with us in our [community](https://community.particle.io) or through IRC ([#particle on freenode](https://webchat.freenode.net/?channels=%23particle)).
