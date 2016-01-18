@@ -1,6 +1,6 @@
-# Spark Source
+# Particle Source
 
-> The website for organizing all of Spark's open source repositories.
+> The website for organizing all of Particle's open source repositories.
 
 ### Generating static content
 

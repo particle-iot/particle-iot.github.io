@@ -1,7 +1,7 @@
 {
   "name": "spark.github.io",
-  "description": "Spark's website at spark.github.io.",
-  "version": "0.1.15",
+  "description": "Particle's website at spark.github.io.",
+  "version": "0.1.16",
   "homepage": "http://spark.github.io",
   "author": {
     "name": "Zach Supalla",
@@ -26,10 +26,10 @@
     "grunt-contrib-clean": "~0.5.0",
     "grunt-contrib-connect": "~0.6.0",
     "grunt-contrib-watch": "~0.5.3",
-    "load-grunt-tasks": "~0.2.1",
-    "time-grunt": "~0.2.7",
     "grunt-push-release": "~0.1.1",
-    "grunt-contrib-sass": "~0.7.2"
+    "grunt-sass": "^1.1.0",
+    "load-grunt-tasks": "~0.2.1",
+    "time-grunt": "~0.2.7"
   },
   "licenses": [
     {
