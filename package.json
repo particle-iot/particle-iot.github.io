@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/spark/spark.github.io.git"
+    "url": "git://github.com/particle-iot/spark.github.io.git"
   },
   "bugs": {
-    "url": "https://github.com/spark/spark.github.io/issues"
+    "url": "https://github.com/particle-iot/spark.github.io/issues"
   },
   "engines": {
     "node": ">=0.8"
@@ -34,7 +34,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/spark/spark.github.io/blob/master/LICENSE-MIT"
+      "url": "https://github.com/particle-iot/spark.github.io/blob/master/LICENSE-MIT"
     }
   ],
   "keywords": [
