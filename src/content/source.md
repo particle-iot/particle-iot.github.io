@@ -22,7 +22,7 @@ The content below includes everything necessary to build a powerful connected de
 
 #### Transport layer
 
-The transport layer between Particle devices and the Particle Cloud is composed of [CoAP](https://tools.ietf.org/html/draft-ietf-core-coap-18) packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the [core-communication-lib](https://github.com/spark/core-communication-lib) above and the [spark-protocol](https://github.com/spark/spark-protocol) library below.
+The transport layer between Particle devices and the Particle Cloud is composed of [CoAP](https://tools.ietf.org/html/draft-ietf-core-coap-18) packets sent over a TCP socket encrypted through an RSA asymmetric key handshake passed off to an AES encrypted tunnel. Its implementation can be found in the [core-communication-lib](https://github.com/particle-iot/core-communication-lib) above and the [spark-protocol](https://github.com/particle-iot/spark-protocol) library below.
 
 #### Cloud software
 
