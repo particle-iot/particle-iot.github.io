@@ -1,7 +1,7 @@
 {
   "name": "spark.github.io",
   "description": "Particle's website at spark.github.io.",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "homepage": "http://particle-iot.github.io",
   "author": {
     "name": "Zach Supalla",
