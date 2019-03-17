@@ -60,7 +60,7 @@
   "dev": [
     {
       "title": "spark-dev",
-      "description": "Professional IDE for Particle, based on Github's Atom project.",
+      "description": "Professional IDE for Particle, based on GitHub's Atom project.",
       "available": true
     },
     {
