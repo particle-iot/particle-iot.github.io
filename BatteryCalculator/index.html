@@ -20,16 +20,12 @@
                 <span class="font-weight-bold">Ultra Low Power:</span> used by off the shelf firmware and Tracker Services. If 
                 using configuration on the Particle Console/API to configure Sleep modes, select Ultra Low Power. <br/>
                 If the "Motion" options of the configuration are disabled, then select "RTC wake-up," otherwise "RTC+motion wake-up"
-                <div><span class="font-weight-bold">Stop:</span> Available if using custom firmware application, allows for additional wake-up sources. Highest power consumption.</div>
-                <div><span class="font-weight-bold">Hibernate:</span> Available if using custom firmware application. Lowest power consumption. Application will have to restore state like local variables. This should be treated as a cold re-start.</div>
+                <div class="pt-3"><span class="font-weight-bold">Stop:</span> Available if using custom firmware application, allows for additional wake-up sources. Highest power consumption.</div>
+                <div class="pt-3"><span class="font-weight-bold">Hibernate:</span> Available if using custom firmware application. Lowest power consumption. Application will have to restore state like local variables. This should be treated as a cold re-start.</div>
                 <select class="form-select" name="sleepMode" id="sleepMode"></select>
             </div>
         </div>
         <div class="row justify-content-center pt-3">
-            <div class="col-5">
-                <div class="text-center font-weight-bold">Publishes per day</div>
-                <input class="form-control" type="number" min="0" value="1" id="publishes" max="999"/>
-            </div>
             <div class="col-5">
                 <div class="text-center font-weight-bold">Battery capacity</div>
                 <div class="input-group">
@@ -37,20 +33,41 @@
                     <span class="input-group-text" id="batteryCapUnits">mAh</span>
                 </div>
             </div>
-        </div>
-        <div class="row justify-content-center pt-3">
             <div class="col-5">
+                <div class="text-center font-weight-bold">Battery Chemistry</div>
+                <select class="form-select" name="batteryChemistry" id="batteryChemistry"></select>
+            </div>
+        </div>
+        <div class="row justify-content-center pt-5">
+            <div class="col-3">
+                <div class="text-center font-weight-bold">Publishes per day</div>
+                <input class="form-control" type="number" min="0" value="1" id="publishes" max="999"/>
+            </div>
+            <div class="col-3">
                 <div class="text-center font-weight-bold">Time from boot to publish</div>
                 <div class="input-group">
                     <input class="form-control" type="number" min="30" max="999" value="90" id="conn_max" aria-describedby="conn_maxUnits"/>
                     <span class="input-group-text" id="conn_maxUnits">seconds</span>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="col-3">
                 <div class="text-center font-weight-bold">Execution time after publish</div>
                 <div class="input-group">
                     <input class="form-control" type="number" min="10" max="99" value="10" id="exe_min" aria-describedby="exe_minUnits"/>
                     <span class="input-group-text" id="exe_minUnits">seconds</span>
+                </div>
+            </div>
+        </div>        
+        <div class="row justify-content-center pt-3">
+            <div class="col-5">
+                <div class="text-center font-weight-bold">Partial wake-ups per day</div>
+                <input class="form-control" type="number" min="0" value="0" id="partialWake" max="999"/>
+            </div>
+            <div class="col-5">
+                <div class="text-center font-weight-bold">Partial wake-up duration</div>
+                <div class="input-group">
+                    <input class="form-control" type="number" min="1" value="10" id="partialWakeTime" max="999" aria-describedby="partialWakeTimeUnits"/>
+                    <span class="input-group-text" id="partialWakeTimeUnits">seconds</span>
                 </div>
             </div>
         </div>
@@ -59,20 +76,14 @@
         <div class="row justify-content-center"><span class="text-center font-weight-bold">Estimated battery life</span></div>
         <div class="row justify-content-center">
             <div class="col text-center">
-                <span id="days"></span><span class="font-weight-light"> days</span></div>
+                <span id="days"></span><span class="font-weight-light"> days</span>
             </div>
-        <div class="row justify-content-center">
-            <div class="col text-center">
-                <span id="weeks"></span><span class="font-weight-light"> weeks</span></div>
-            </div>
-        <!--<div class="row justify-content-center">
-            <span class="text-center font-weight-bold">Estimated Data Usage</span>
         </div>
         <div class="row justify-content-center">
             <div class="col text-center">
-                <span id="data-usage"></span><span> MB/month</span>
+                <span id="weeks"></span><span class="font-weight-light"> weeks</span>
             </div>
-        </div> -->
+        </div>
     </div>
 
     <script type="text/javascript">
@@ -80,8 +91,9 @@
         const dataDb = [
             {
                 "name":"T402", 
-                "wakeToPublish":45,
-                "publishToSleep":40,
+                "wakeToPublish":110,
+                "publishToSleep":100,
+                "partialWake":20,
                 "sleepModes": [
                     {"name":"Ultra Low Power: RTC wake-up","power":0.130},
                     {"name":"Ultra Low Power: RTC+motion wake-up","power":0.280},
@@ -91,8 +103,9 @@
             },
             {
                 "name":"T523",
-                "wakeToPublish":50,
-                "publishToSleep": 45,
+                "wakeToPublish":140,
+                "publishToSleep":120,
+                "partialWake":20,
                 "sleepModes": [
                     {"name":"Ultra Low Power: RTC wake-up","power":0.154},
                     {"name":"Ultra Low Power: RTC+motion wake-up","power":0.300},
@@ -101,10 +114,23 @@
                 ]
             }
         ]
+        const batteryChems = [
+            {
+                "name":"LiPo: Rechargeable, one year self-discharge (Tracker One)",
+                "days": 360
+            },
+            {
+                "name":"Lithium Ferrum: Non-rechargeable, 10 year self-discharge",
+                "days": 3600
+            }
+        ]
         const deviceSelect = document.getElementById("device");
         const sleepModeSelect = document.getElementById("sleepMode");
         const batteryCap = document.getElementById("batteryCap");
+        const batteryChemistry = document.getElementById("batteryChemistry");
         const publishes = document.getElementById("publishes");
+        const partialWake = document.getElementById("partialWake");
+        const partialWakeTime = document.getElementById("partialWakeTime");
         const conn_max = document.getElementById("conn_max");
         const exe_min = document.getElementById("exe_min");
 
@@ -113,6 +139,12 @@
             option.text = option.value = element.name;
             deviceSelect.add(option);
         });
+        batteryChems.forEach( element => {
+            let option = document.createElement("option");
+            option.text = element.name;
+            option.value = element.days;
+            batteryChemistry.add(option);
+        })
         const deviceChanged = () => {
             sleepModeSelect.querySelectorAll("option").forEach(option => option.remove());
             for (let element of dataDb) {
@@ -130,28 +162,31 @@
             calculateFunc();
         };
         const calculateFunc = () => {
-            let selfDischargePerDay = batteryCap.value*0.9/360;
-            let sleepPowerPerDay, publishPowerPerDay;
+            let selfDischargePerDay = batteryCap.value*0.9/batteryChemistry.value;
+            let sleepPowerPerDay, publishPowerPerDay, partialPowerPerDay;
             for (let element of dataDb) {
                 if (element.name == deviceSelect.value) {
-                    sleepPowerPerDay = (24-(publishes.value*(conn_max.valueAsNumber+exe_min.valueAsNumber)/3600))*sleepModeSelect.value;
+                    sleepPowerPerDay = (24-(publishes.value*(conn_max.valueAsNumber+exe_min.valueAsNumber)/3600)-(partialWake.valueAsNumber*partialWakeTime.valueAsNumber/3600))*sleepModeSelect.value;
                     publishPowerPerDay = (publishes.value*(conn_max.valueAsNumber)/3600)*element.wakeToPublish+(publishes.value*(exe_min.valueAsNumber)/3600)*element.publishToSleep;
+                    partialPowerPerDay = (partialWake.valueAsNumber*partialWakeTime.valueAsNumber*element.partialWake)/3600;
                     break;
                 }
             }
-            let batteryLife = batteryCap.value*0.9/(selfDischargePerDay+(sleepPowerPerDay+publishPowerPerDay)/0.85);
+            let batteryLife = batteryCap.value*0.9/(selfDischargePerDay+(sleepPowerPerDay+publishPowerPerDay+partialPowerPerDay)/0.85);
+            console.log("Partial Power per day: "+partialPowerPerDay);
             console.log("Sleep Power Per Day: "+sleepPowerPerDay);
             console.log("Publish Power Per Day: "+publishPowerPerDay);
             console.log("Self discharge per day: "+selfDischargePerDay);
             document.getElementById("days").innerText = batteryLife.toFixed(2);
             document.getElementById("weeks").innerText = (batteryLife/7).toFixed(2);
-            //const bytesPerPublish = 350;
-            //document.getElementById("data-usage").innerText = (bytesPerPublish*publishes.value*31/(1024*1024)).toFixed(2);
         }
         deviceSelect.addEventListener('change', deviceChanged);
         sleepModeSelect.addEventListener('change', () => calculateFunc());
         publishes.addEventListener('change', () => calculateFunc());
+        partialWake.addEventListener('change', () => calculateFunc());
+        partialWakeTime.addEventListener('change', () => calculateFunc());
         batteryCap.addEventListener('change', () => calculateFunc());
+        batteryChemistry.addEventListener('change', () => calculateFunc());
         conn_max.addEventListener('change', () => calculateFunc());
         exe_min.addEventListener('change', () => calculateFunc());
         deviceChanged();
