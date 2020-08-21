@@ -8,14 +8,14 @@
 <body>
     <div class="container">
         <div class="row justify-content-center pt-3">
-            <div class="col-10 ">
+            <div class="col-md-10 ">
                 <div class="font-weight-bold text-center">Device</div>
                 <div>T402: North America Cat-M1<br/>T523: Europe Cat 1</div>
                 <select class="form-select" name="device" id="device"></select>
             </div>
         </div>
         <div class="row justify-content-center pt-3">
-            <div class="col-10">
+            <div class="col-md-10">
                 <div class="text-center font-weight-bold">Sleep Mode</div>
                 <span class="font-weight-bold">Ultra Low Power:</span> used by off the shelf firmware and Tracker Services. If 
                 using configuration on the Particle Console/API to configure Sleep modes, select Ultra Low Power. <br/>
@@ -26,32 +26,40 @@
             </div>
         </div>
         <div class="row justify-content-center pt-3">
-            <div class="col-5">
-                <div class="text-center font-weight-bold">Battery capacity</div>
+            <div class="col-md-10">
+                <div class="text-center font-weight-bold">Battery</div>
+                Select the battery capacity and type. If using the Tracker ONE, leave as 2000mAh and LiPo.
+            </div>
+            <div class="col-md-5">
                 <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Capacity</span>
+                      </div>
                     <input class="form-control" type="number" min="100" max="99999" value="2000" id="batteryCap" aria-describedby="batteryCapUnits"/>
                     <span class="input-group-text" id="batteryCapUnits">mAh</span>
                 </div>
             </div>
-            <div class="col-5">
-                <div class="text-center font-weight-bold">Battery Chemistry</div>
+            <div class="col-md-5">
                 <select class="form-select" name="batteryChemistry" id="batteryChemistry"></select>
             </div>
         </div>
         <div class="row justify-content-center pt-5">
-            <div class="col-3">
+            <div class="col-md-3">
                 <div class="text-center font-weight-bold">Publishes per day</div>
+                <div>How many times does the device wake up, connect to the network, and publish?</div>
                 <input class="form-control" type="number" min="0" value="1" id="publishes" max="999"/>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <div class="text-center font-weight-bold">Time from boot to publish</div>
+                <div>Worse cellular reception or longer time to GPS lock will make this longer. You can set a maximum as a timeout.</div>
                 <div class="input-group">
                     <input class="form-control" type="number" min="30" max="999" value="90" id="conn_max" aria-describedby="conn_maxUnits"/>
                     <span class="input-group-text" id="conn_maxUnits">seconds</span>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-md-3">
                 <div class="text-center font-weight-bold">Execution time after publish</div>
+                <div>This is configured in the console, to allow the application to clean up after publish.</div>
                 <div class="input-group">
                     <input class="form-control" type="number" min="10" max="99" value="10" id="exe_min" aria-describedby="exe_minUnits"/>
                     <span class="input-group-text" id="exe_minUnits">seconds</span>
@@ -59,13 +67,23 @@
             </div>
         </div>        
         <div class="row justify-content-center pt-3">
-            <div class="col-5">
-                <div class="text-center font-weight-bold">Partial wake-ups per day</div>
-                <input class="form-control" type="number" min="0" value="0" id="partialWake" max="999"/>
+            <div class="col-md-10">
+                <div class="font-weight-bold text-center">Partial wake-ups</div>
+                These are wake-ups when the cellular modem is not turned on. The device may collect data, and then goes back into sleep mode.
             </div>
-            <div class="col-5">
-                <div class="text-center font-weight-bold">Partial wake-up duration</div>
+            <div class="col-md-5">
                 <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Per day</span>
+                    </div>
+                    <input class="form-control" type="number" min="0" value="0" id="partialWake" max="999"/>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Duration</span>
+                      </div>
                     <input class="form-control" type="number" min="1" value="10" id="partialWakeTime" max="999" aria-describedby="partialWakeTimeUnits"/>
                     <span class="input-group-text" id="partialWakeTimeUnits">seconds</span>
                 </div>
